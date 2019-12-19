@@ -1,0 +1,67 @@
+$nbbg : rgba(80, 80, 80, 1)
+$hbg : rgba(100, 100, 100, 1)
+$headerfont : rgb(200, 200, 200)
+$nbhover : rgb(0, 0, 0)
+
+*
+    font-family: consolas, calibri
+    box-sizing: border-box
+.header
+    padding: 40px
+    text-align: center
+    /*  background-image: url('D:\IT\ascii.jpg') */
+    background-color: $hbg
+    color: white
+
+    h1
+        font-size: 40px
+
+.navbar
+    overflow: hidden
+    background-color: $nbbg
+    a
+        float: left
+        display: block
+        color: $headerfont
+        text-align: center
+        padding: 14px 20px
+        text-decoration: none
+
+        &:hover
+            background-color: $nbhover
+            color: white
+
+.row
+    display: flex
+    flex-wrap: wrap
+
+.side
+    flex: 30%
+    background-color: white
+    padding: 20px
+
+.main
+    flex: 70%
+    background-color: white
+    padding: 20px
+
+.fakeimg
+    background-color: #aaa
+    width: 100%
+    padding: 20px
+
+.footer
+    padding: 20px
+    text-align: center
+    background: #ddd
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px)
+      .row
+          flex-direction: column
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px)
+    .navbar a
+        float: none
+        width:100%
