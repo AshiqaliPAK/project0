@@ -3,15 +3,19 @@
   box-sizing: border-box;
 }
 
-.header {
-  padding: 40px;
-  text-align: center;
-  /*  background-image: url('D:\IT\ascii.jpg') */
-  background-color: #646464;
-  color: white;
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/web development.jpg");
+    background-size: 100% 100%;
+    padding: 20px;
 }
-.header h1 {
-  font-size: 40px;
+.title {
+    color: white;
+    text-align: center;
+
+}
+h1 {
+  font-size: 60px;
+  opacity: 1;
 }
 
 .navbar {
