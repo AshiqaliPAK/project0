@@ -52,6 +52,12 @@ h1 {
   padding: 20px;
 }
 
+.meleft {
+  background-image: url("me.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+  padding: 10px;
+}
 .fakeimg {
   background-color: #aaa;
   width: 100%;
@@ -62,6 +68,24 @@ h1 {
   padding: 20px;
   text-align: center;
   background: #ddd;
+}
+table {
+    width: 100%;
+    display: table;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    display: block;
+    border: 1px solid black;
+    padding: 10px;
+}
+tr {
+    display: table-cell;
+}
+th {
+    background-color: lightblue;
+    font-weight: bolder;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
