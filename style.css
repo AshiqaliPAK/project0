@@ -4,7 +4,7 @@
 }
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/web development.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("web development.jpg");
     background-size: 100% 100%;
     padding: 20px;
 }
