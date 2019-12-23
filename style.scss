@@ -1,0 +1,113 @@
+//colors
+$black_60: rgba(0, 0, 0, 0.6);
+$white: white;
+$color_gray: #505050;
+$color_pumice: #c8c8c8;
+$black: black;
+$color_alto: #ddd;
+$color_th: lightblue;
+
+//fonts
+$font_0: consolas, calibri;
+
+//urls
+$url_background: url("web development.jpg");
+$url_me: url("me.jpg");
+
+//@extend-elements
+//original selectors
+//th, td
+%td_th {
+	display: block;
+	border: 1px solid $black;
+	padding: 10px;
+}
+
+
+* {
+	font-family: $font_0;
+	box-sizing: border-box;
+}
+header {
+	background: linear-gradient($black_60, $black_60), $url_background;
+	background-size: 100% 100%;
+	padding: 20px;
+}
+.title {
+	color: $white;
+	text-align: center;
+}
+h1 {
+	font-size: 60px;
+	opacity: 1;
+}
+.navbar {
+	overflow: hidden;
+	background-color: $color_gray;
+	a {
+		float: left;
+		display: block;
+		color: $color_pumice;
+		text-align: center;
+		padding: 14px 20px;
+		text-decoration: none;
+		&:hover {
+			background-color: $black;
+			color: $white;
+		}
+	}
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid $black;
+}
+.side {
+	flex: 30%;
+	background-color: $white;
+	padding: 20px;
+}
+.main {
+	flex: 70%;
+	background-color: $white;
+	padding: 20px;
+}
+.meleft {
+	background-image: $url_me;
+	background-size: 100% 100%;
+	width: 100%;
+	padding: 10px;
+}
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: $color_alto;
+}
+table {
+	width: 100%;
+	display: table;
+	border: 1px solid $black;
+	border-collapse: collapse;
+}
+th {
+	@extend %td_th;
+	background-color: $color_th;
+	font-weight: bolder;
+}
+td {
+	@extend %td_th;
+}
+tr {
+	display: table-cell;
+}
+@media screen and(max-width: 700px) {
+	.row {
+		flex-direction: column;
+	}
+}
+@media screen and(max-width: 400px) {
+	.navbar a {
+		float: none;
+		width: 100%;
+	}
+}

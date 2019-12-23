@@ -1,18 +1,25 @@
+td, th {
+  display: block;
+  border: 1px solid black;
+  padding: 10px;
+}
+
 * {
   font-family: consolas, calibri;
   box-sizing: border-box;
 }
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("web development.jpg");
-    background-size: 100% 100%;
-    padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("web development.jpg");
+  background-size: 100% 100%;
+  padding: 20px;
 }
-.title {
-    color: white;
-    text-align: center;
 
+.title {
+  color: white;
+  text-align: center;
 }
+
 h1 {
   font-size: 60px;
   opacity: 1;
@@ -38,6 +45,7 @@ h1 {
 .row {
   display: flex;
   flex-wrap: wrap;
+  border: 1px solid black;
 }
 
 .side {
@@ -58,43 +66,34 @@ h1 {
   width: 100%;
   padding: 10px;
 }
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 
 .footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
 }
+
 table {
-    width: 100%;
-    display: table;
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    display: block;
-    border: 1px solid black;
-    padding: 10px;
-}
-tr {
-    display: table-cell;
-}
-th {
-    background-color: lightblue;
-    font-weight: bolder;
+  width: 100%;
+  display: table;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+th {
+  background-color: lightblue;
+  font-weight: bolder;
+}
+
+tr {
+  display: table-cell;
+}
+
 @media screen and (max-width: 700px) {
   .row {
     flex-direction: column;
   }
 }
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .navbar a {
     float: none;
